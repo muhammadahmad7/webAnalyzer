@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+<head>
+    <title>URL info</title>
+</head>
+<body >
+{{if .Error}}
+    {{.Error}}
+{{else if .HtmlVersion}}
+    URL Analyzed: {{ .InputURL }} <br>
+    HTML Version: {{ .HtmlVersion}} <br>
+    Page Title  : {{ .PageTitle }}  <br>
+    H1 heading count : {{ .H1Count}} <br>
+    H2 heading count : {{ .H2Count}} <br>
+    H3 heading count : {{ .H3Count}} <br>
+    H4 heading count : {{ .H4Count}} <br>
+    H5 heading count : {{ .H5Count}} <br>
+    H6 heading count : {{ .H6Count}} <br>
+    Internal Links Count : {{.InternalLinksCount}} <br>
+    External Links Count : {{.ExternalLinksCount}} <br>
+    Inaccessible Links Count : {{ .InaccessibleLinksCount}} <br>
+    Is Login page : {{.IsLogin}} <br>
+{{end}}
+
+<form action="/" method="post">
+    <input type="url" name="url" placeholder="Enter URL to get info" required>
+    <input type="submit" value="get info">
+</form>
+</a>
+</body>
+
+</html>
