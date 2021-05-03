@@ -35,13 +35,9 @@ Take URL and input and give the following insight of its content
 
 Go Version 1.13 or later Installed 
 
-```
-Give examples
-```
-
 ### Steps
 
-*  Clone the git repo ```t```
+*  Clone the git repo 
 *  Go the project folder and type ```go run .```
 *  App is running on port 8000 you can access if from your browser by going to http://localhost:8000/
  
