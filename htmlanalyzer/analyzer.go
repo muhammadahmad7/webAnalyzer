@@ -44,8 +44,8 @@ func analyserHtmlDoc(r io.Reader,InputURL string)(*analysisParam,error) {
 		wg.Done()
 	}()
 	traverse(node, &ap)
-	close(ap.Links)
 	wg.Wait()
+	close(ap.Links)
 	return &ap , nil
 }
 
